@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/textintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Droid Desserts"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/donut_pngrepo_com"
+        android:layout_below="@+id/textintro"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="60dp"
+        android:onClick="showDonutOrder"
+        />
+
+    <TextView
+        android:id="@+id/donut_description"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/donut_description"
+        android:layout_below="@+id/donut"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/cupcake_pngrepo_com"
+        android:layout_below="@+id/textintro"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/donut"
+        android:onClick="showIceCreamOrder"
+        />
+
+    <TextView
+        android:id="@+id/ice_cream_description"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/donut"
+        android:text="@string/ice_cream_description"
+        android:layout_below="@+id/ice_cream"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/steak_pngrepo_com"
+        android:layout_below="@+id/textintro"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="80dp"
+        android:onClick="showFroyoOrder"
+        android:layout_toRightOf="@+id/ice_cream"
+        />
+
+    <TextView
+        android:id="@+id/froyo_description"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ice_cream_description"
+        android:text="@string/ice_cream_description"
+        android:layout_below="@+id/froyo"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="24dp"
+        />
+</RelativeLayout>
